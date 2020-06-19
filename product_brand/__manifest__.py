@@ -5,11 +5,12 @@
 # Copyright 2018 Daniel Campos <danielcampos@avanzosc.es>
 # Copyright 2018 Tecnativa - David Vidal
 # Copyright 2019 Giovanni - GSLabIt
+# Copyright 2020 Jose Luis Zanotti <joseluiszanotti@gmail.com>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
     'name': 'Product Brand Manager',
-    'version': '12.0.2.0.0',
+    'version': '13.0.1.0.0',
     'development_status': "Mature",
     'category': 'Product',
     'summary': "Product Brand Manager",

@@ -1,4 +1,5 @@
 # Copyright 2018 Tecnativa - David Vidal
+# Copyright 2020 Jose Luis Zanotti <joseluiszanotti@gmail.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
 from odoo import fields, models
@@ -15,18 +16,11 @@ class AccountInvoiceReport(models.Model):
     def _select(self):
         select_str = super()._select()
         select_str += """
-            , sub.product_brand_id as product_brand_id
-            """
-        return select_str
-
-    def _sub_select(self):
-        select_str = super()._sub_select()
-        select_str += """
-            , pt.product_brand_id
+            , template.product_brand_id as product_brand_id
             """
         return select_str
 
     def _group_by(self):
         group_by_str = super()._group_by()
-        group_by_str += ", pt.product_brand_id"
+        group_by_str += ", product_brand_id"
         return group_by_str
